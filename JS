@@ -1,0 +1,18 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Get DOM elements
+    const loadingProgress = document.getElementById('loadingProgress');
+    
+    // Start loading animation
+    setTimeout(() => {
+        loadingProgress.style.width = '100%';
+    }, 100);
+    
+    // After 3 seconds, show message
+    setTimeout(() => {
+        console.log("Bishash App loaded successfully!");
+        console.log("Splash screen completed - App is ready!");
+        
+        // You can add redirect here if needed
+        // window.location.href = "home.html";
+    }, 3000);
+});
